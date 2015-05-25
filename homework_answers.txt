@@ -103,6 +103,8 @@ Write SQL statements that:
 
     22. Deletes the wishlist item for the user you just deleted.
 
+    delete from wishlists where user_id = 15;
+
 Please supply SQL statements, and the results they generate.
 
 
