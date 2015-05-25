@@ -25,7 +25,7 @@ Write SQL statements that:
 
     4. Selects the name and price of the second most expensive product.
 
-    select name, MAX(price) from products where "price";
+    select * from products order by price desc limit 1,1;
 
     5. Selects the name and price of the least expensive product.
 
@@ -53,7 +53,7 @@ Write SQL statements that:
 
     11. Selects the names of all users whose names start with the letter "J".
 
-
+    select name from users where name limit 1 == "J";
 
 
     12. Selects the number of users whose first names are "Spencer".
