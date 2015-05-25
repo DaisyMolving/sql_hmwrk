@@ -55,10 +55,18 @@ Write SQL statements that:
 
     select name from users where name like "J%";
 
-
     12. Selects the number of users whose first names are "Spencer".
+
+    select name from users where name like "Spencer%";
+
     13. Selects the number of users who want a "Teddy Bear".
+
+    select COUNT(product_id) from wishlists where product_id == 1;
+
     14. Selects the count of items on the wishlish of the user with your name.
+
+    select COUNT(user_id) from wishlists where user_id == 6;
+
     15. Selects the count and name of all products on the wishlist, ordered by count in descending order.
     16. Selects the count and name of all products that are not on sale on the wishlist, ordered by count in descending order.
     17. Inserts a user with the name "Jonathan Anderson" into the users table. Ensure the created_at column is set to the current time.
