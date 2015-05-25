@@ -44,6 +44,9 @@ Write SQL statements that:
     select SUM(price) from products;
 
     9. Selects the sum of the price of all products whose prices is less than £20.
+
+    select SUM(price) from products where "price" < 20;
+
     10. Selects the id of the user with your name.
     11. Selects the names of all users whose names start with the letter "J".
     12. Selects the number of users whose first names are "Spencer".
