@@ -69,16 +69,16 @@ Write SQL statements that:
 
     15. Selects the count and name of all products on the wishlist, ordered by count in descending order.
 
-    select products.name, count(wishlists.product_id) 
-    as createnameforcount 
-    from wishlists 
-    inner join products on products.id = wishlists.product_id 
-    group by product_id 
-    order by createnameforcount desc;
+     select products.name, count(wishlists.product_id) 
+        as createnameforcount 
+        from wishlists 
+        inner join products on products.id = wishlists.product_id 
+        group by product_id 
+        order by createnameforcount desc;
 
     16. Selects the count and name of all products that are not on sale on the wishlist, ordered by count in descending order.
 
-    select products.name, count(wishlists.product_id) as amountnotonsale from wishlists inner join products on products.id = wishlists.product_id where "on_sale" = "f" group by product_id order by amountnotonsale desc;
+        select products.name, count(wishlists.product_id) as amountnotonsale from wishlists inner join products on products.id = wishlists.product_id where "on_sale" = "f" group by product_id order by amountnotonsale desc;
     
 
     17. Inserts a user with the name "Jonathan Anderson" into the users table. Ensure the created_at column is set to the current time.
