@@ -48,7 +48,14 @@ Write SQL statements that:
     select SUM(price) from products where "price" < 20;
 
     10. Selects the id of the user with your name.
+
+    select "id" from users where "name" == "Rane Gowan";
+
     11. Selects the names of all users whose names start with the letter "J".
+
+
+
+
     12. Selects the number of users whose first names are "Spencer".
     13. Selects the number of users who want a "Teddy Bear".
     14. Selects the count of items on the wishlish of the user with your name.
