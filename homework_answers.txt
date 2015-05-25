@@ -81,7 +81,11 @@ Write SQL statements that:
  
     18. Selects the id of the user with the name "Jonathan Anderson"?
 
+    select "id" from  users where "name" == "Jonathan Anderson";
+
     19. Inserts a wishlist entry for the user with the name "Jonathan Anderson" for the product "The Ruby Programming Language".
+
+    insert into "wishlists" (user_id, product_id) values (15, 4);
 
     20. Updates the name of the "Jonathan Anderson" user to be "Jon Anderson".
 
